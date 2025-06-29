@@ -25,14 +25,13 @@ const HomeScreen = () => {
 
   // Navigate to Profile screen
   const onPressItem = (item: IModelAddress) => {
-    navigation.navigate('MapView', { item: item });
-
-    // showLocation({
-    //   latitude: item.latitude,
-    //   longitude: item.longitude,
-    //   title: item.address,
-    // });
+    showLocation({
+      latitude: item.latitude,
+      longitude: item.longitude,
+      title: item.address,
+    });
   };
+
   const onPressAdd = () => {
     navigation.navigate('SeacrhLocation');
   };
